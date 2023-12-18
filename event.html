@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 
 <head>
   <meta charset="utf-8">
@@ -7,11 +7,12 @@
   <link rel="stylesheet" href="styles/styles.css?ver=0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="body">
+<body>
+
   <header class="page-header">
     <div class="page-header__container">
       <a href="index.html" class="page-header__logo">
@@ -27,8 +28,13 @@
         <a href="#" class="page-header__nav-link">Контакты</a>
       </nav>
 
-      <a href="#" class="button page-header__user-button">Войти</a>
+      <div class="page-header__right-block">
+        <a href="#" class="btn page-header__user-btn">
+          Войти
+        </a>
+      </div>
     </div>
+
   </header>
 
   <main class="main">
@@ -37,7 +43,7 @@
         <div class="reserve__checks">
           Чекбоксы
         </div>
-        <div class="reserve__scheme">
+        <div class="reserve__scheme>">
           Схема столов
         </div>
         <div class="reserve__order">
@@ -51,7 +57,32 @@
   </main>
 
   <footer class="page-footer">
-
+    <div class="page-footer__container">
+      <div class="page-footer__border"></div>
+      <div class="page-footer__wrapper">
+        <nav class="page-footer__nav">
+          <a href="" class="page-footer__nav-link">Календарь мероприятий</a>
+          <a href="" class="page-footer__nav-link">Провести мероприятие</a>
+          <a href="" class="page-footer__nav-link">Стать арендатором</a>
+          <a href="" class="page-footer__nav-link">Наши проекты</a>
+          <a href="" class="page-footer__nav-link">Контакты</a>
+        </nav>
+        <form class="page-footer__form subscribe">
+          <h4 class="subscribe__title">Подпишись и будь в курсе происходящего</h4>
+          <div class="subscribe__wrapper">
+            <input type="email" name="email" placeholder="Email" class="subscribe__input" required />
+            <button type="submit" class="subscribe__submit">Подписаться</button>
+          </div>
+          <label class="subscribe__check check">
+            <input type="checkbox" class="check__input" name="agree" required />
+            <span class="check__mark"></span>
+            <span class="check__label">
+              Согласен на обработку персональных данных
+            </span>
+          </label>
+        </form>
+      </div>
+    </div>
   </footer>
 </body>
 

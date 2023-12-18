@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 
 <head>
   <meta charset="utf-8">
@@ -7,11 +7,12 @@
   <link rel="stylesheet" href="styles/styles.css?ver=0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="body">
+<body>
+
   <header class="page-header">
     <div class="page-header__container">
       <a href="index.html" class="page-header__logo">
@@ -27,112 +28,134 @@
         <a href="#" class="page-header__nav-link">Контакты</a>
       </nav>
 
-      <a href="#" class="button page-header__user-button">Войти</a>
+      <div class="page-header__right-block">
+        <a href="#" class="btn page-header__user-btn">
+          Войти
+        </a>
+      </div>
     </div>
+
   </header>
 
   <main class="main">
-    <div class="events">
+    <div class="home">
       <div class="events__container">
-        <h2 class="events__title title">Мероприятия</h2>
-        <div class="events__list listing">
-          <article class="event-card event-card listing__event-card">
-            <a href="#" class="event-card__link">
-              <picture class="event-card__picture">
-                <source type="img" srcset="../assets/images/Nirvana.png_webp" />
+        <section class="listing events__listing">
+          <h2 class="listing__section-title section-title">Мероприятия</h2>
 
-                <img src="../assets/images/Nirvana.png" alt="Nirvana" class="event-card__img" />
-              </picture>
+          <div class="listing__events-list">
+            <!-- prettier-ignore -->
+            <article class="event-card event-card listing__event-card">
+              <a href="#" class="event-card__link">
+                <picture class="event-card__picture">
+                  <img src="../assets/images/Nirvana.png" alt="Nirvana" class="event-card__img" />
+                </picture>
 
-              <h4 class="event-card__title">Cобираемся и слушаем альбом Nirvana. Nirvana</h4>
+                <h4 class="event-card__title">Cобираемся и слушаем альбом Nirvana. Nirvana</h4>
 
-              <p class="event-card__description">Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.</p>
+                <p class="event-card__description">Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.</p>
 
-              <time datetime="2022-12-07t18:00" class="event-card__time">07.12.2022 | начало 18.00</time>
-            </a>
-          </article>
-          <article class="event-card event-card listing__event-card">
-            <a href="#" class="event-card__link">
-              <picture class="event-card__picture">
-                <source type="img" srcset="../assets/images/HowStuffWorks.png_webp" />
+                <time datetime="2022-12-07t18:00" class="event-card__time">07.12.2022 | начало 18.00</time>
+              </a>
+            </article>
+            <article class="event-card event-card listing__event-card">
+              <a href="#" class="event-card__link">
+                <picture class="event-card__picture">
+                  <img src="../assets/images/HowStuffWorks.png" alt="Stuff" class="event-card__img" />
+                </picture>
 
-                <img src="../assets/images/HowStuffWorks.png" alt="Stuff" class="event-card__img" />
-              </picture>
+                <h4 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
 
-              <h4 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
+                <p class="event-card__description">Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.</p>
 
-              <p class="event-card__description">Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.</p>
+                <time datetime="2022-12-14t18:30" class="event-card__time">14.12.2022 | начало 18.30</time>
+              </a>
+            </article>
+            <article class="event-card event-card listing__event-card">
+              <a href="#" class="event-card__link">
+                <picture class="event-card__picture">
+                  <img src="../assets/images/Sade.png" alt="Sade" class="event-card__img" />
+                </picture>
 
-              <time datetime="2022-12-14t18:30" class="event-card__time">14.12.2022 | начало 18.30</time>
-            </a>
-          </article>
-          <article class="event-card event-card listing__event-card">
-            <a href="#" class="event-card__link">
-              <picture class="event-card__picture">
-                <source type="img" srcset="../assets/images/Sade.png_webp" />
+                <h4 class="event-card__title">Вечер | The Best of Sade</h4>
 
-                <img src="../assets/images/Sade.png" alt="Sade" class="event-card__img" />
-              </picture>
+                <p class="event-card__description">Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.</p>
 
-              <h4 class="event-card__title">Вечер | The Best of Sade</h4>
+                <time datetime="2022-12-16t20:00" class="event-card__time">16.12.2022 | начало 20.00</time>
+              </a>
+            </article>
+            <article class="event-card event-card listing__event-card">
+              <a href="#" class="event-card__link">
+                <picture class="event-card__picture">
+                  <img src="../assets/images/выставка Малевича.png" alt="malevich" class="event-card__img" />
+                </picture>
 
-              <p class="event-card__description">Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.</p>
+                <h4 class="event-card__title">Выставка Малевича в Томске</h4>
 
-              <time datetime="2022-12-16t20:00" class="event-card__time">16.12.2022 | начало 20.00</time>
-            </a>
-          </article>
-          <article class="event-card event-card listing__event-card">
-            <a href="#" class="event-card__link">
-              <picture class="event-card__picture">
-                <source type="img" srcset="../assets/images/выставка Малевича.png_webp" />
+                <p class="event-card__description">Это будет самая полная выставка с 1988 года, того времени, когда впервые заговорили о Малевиче. Экспозиция займёт два этажа павильона.</p>
 
-                <img src="../assets/images/выставка Малевича.png" alt="malevich" class="event-card__img" />
-              </picture>
+                <time datetime="2022-12-23t20:00" class="event-card__time">23.12.2022 | начало 20.00</time>
+              </a>
+            </article>
+            <article class="event-card event-card listing__event-card">
+              <a href="#" class="event-card__link">
+                <picture class="event-card__picture">
+                  <img src="assets/images/арт-съемка для Tatler.png" alt="Tatler" class="event-card__img" />
+                </picture>
 
-              <h4 class="event-card__title">Выставка Малевича в Томске</h4>
+                <h4 class="event-card__title">Мастер — класс по студийной съемке от Tatler</h4>
 
-              <p class="event-card__description">Это будет самая полная выставка с 1988 года, того времени, когда впервые заговорили о Малевиче. Экспозиция займёт два этажа павильона.</p>
+                <p class="event-card__description">Фотографы издания расскажут, как им удается создавать потрясающие кадры и что может испортить весь процесс.</p>
 
-              <time datetime="2022-12-23t20:00" class="event-card__time">23.12.2022 | начало 20.00</time>
-            </a>
-          </article>
-          <article class="event-card event-card listing__event-card">
-            <a href="#" class="event-card__link">
-              <picture class="event-card__picture">
-                <source type="img" srcset="assets/images/арт-съемка для Tatler.png_webp" />
+                <time datetime="2022-12-25t13:00" class="event-card__time">25.12.2022 | начало 13.00</time>
+              </a>
+            </article>
+            <article class="event-card event-card listing__event-card">
+              <a href="#" class="event-card__link">
+                <picture class="event-card__picture">
+                  <img src="../assets/images/the hatters.png" alt="hatters" class="event-card__img" />
+                </picture>
 
-                <img src="assets/images/арт-съемка для Tatler.png" alt="Tatler" class="event-card__img" />
-              </picture>
+                <h4 class="event-card__title">Повеселимся на славу на концерте The Hatters</h4>
 
-              <h4 class="event-card__title">Мастер — класс по студийной съемке от Tatler</h4>
+                <p class="event-card__description">Российская джипси-фолк-рок группа, основанная в 2016 году в Санкт-Петербурге. В основной состав группы входят Юрий Музыченко</p>
 
-              <p class="event-card__description">Фотографы издания расскажут, как им удается создавать потрясающие кадры и что может испортить весь процесс.</p>
-
-              <time datetime="2022-12-25t13:00" class="event-card__time">25.12.2022 | начало 13.00</time>
-            </a>
-          </article>
-          <article class="event-card event-card listing__event-card">
-            <a href="#" class="event-card__link">
-              <picture class="event-card__picture">
-                <source type="img" srcset="../assets/images/the hatters.png_webp" />
-
-                <img src="../assets/images/the hatters.png" alt="hatters" class="event-card__img" />
-              </picture>
-
-              <h4 class="event-card__title">Повеселимся на славу на концерте The Hatters</h4>
-
-              <p class="event-card__description">Российская джипси-фолк-рок группа, основанная в 2016 году в Санкт-Петербурге. В основной состав группы входят Юрий Музыченко</p>
-
-              <time datetime="2022-12-27t10:00" class="event-card__time">27.12.2022 | начало 10.00</time>
-            </a>
-          </article>
-        </div>
+                <time datetime="2022-12-27t10:00" class="event-card__time">27.12.2022 | начало 10.00</time>
+              </a>
+            </article>
+          </div>
+        </section>
       </div>
     </div>
   </main>
 
   <footer class="page-footer">
-
+    <div class="page-footer__container">
+      <div class="page-footer__border"></div>
+      <div class="page-footer__wrapper">
+        <nav class="page-footer__nav">
+          <a href="" class="page-footer__nav-link">Календарь мероприятий</a>
+          <a href="" class="page-footer__nav-link">Провести мероприятие</a>
+          <a href="" class="page-footer__nav-link">Стать арендатором</a>
+          <a href="" class="page-footer__nav-link">Наши проекты</a>
+          <a href="" class="page-footer__nav-link">Контакты</a>
+        </nav>
+        <form class="page-footer__form subscribe">
+          <h4 class="subscribe__title">Подпишись и будь в курсе происходящего</h4>
+          <div class="subscribe__wrapper">
+            <input type="email" name="email" placeholder="Email" class="subscribe__input" required />
+            <button type="submit" class="subscribe__submit">Подписаться</button>
+          </div>
+          <label class="subscribe__check check">
+            <input type="checkbox" class="check__input" name="agree" required />
+            <span class="check__mark"></span>
+            <span class="check__label">
+              Согласен на обработку персональных данных
+            </span>
+          </label>
+        </form>
+      </div>
+    </div>
   </footer>
 </body>
 
